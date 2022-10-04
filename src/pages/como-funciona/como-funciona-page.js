@@ -6,6 +6,8 @@ import JSONPretty from "react-json-pretty";
 import { MdContentCopy } from "react-icons/md";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { BsChevronCompactRight } from "react-icons/bs";
+import Spinner from 'react-bootstrap/Spinner';
 
 function ComoFunciona() {
   var JSONPrettyMon = require("react-json-pretty/dist/monikai");
@@ -14,8 +16,6 @@ function ComoFunciona() {
 
   useEffect(() => {
     let url = "https://api.kanye.rest";
-    // let url = "https://techy-api.vercel.app/api/json";
-    // let url = "https://api.wfstats.cf/?ref=publicapis.dev";
 
     fetch(url)
       .then((response) => response.json())
@@ -68,46 +68,6 @@ function ComoFunciona() {
         <p>
           <b>1º Passo</b> - No campo "API url" digite o link da API:
         </p>
-        {/* <div className="row">
-          <div className="col-11">
-            <Form.Label htmlFor="api-url-exemple">API url</Form.Label>
-            <Form.Control
-              type="text"
-              id="api-url-exemple"
-              readOnly
-              value="https://api.kanye.rest"
-            />
-            <Form.Text id="passwordHelpBlock" muted>
-              Saiba o que é uma API, clicando{" "}
-              <a href="https://www.google.com/search?q=O+que+é+uma+API%3F&client=opera-gx&hs=IN5&sxsrf=ALiCzsYfBQwabXljCjJf9wXt5LY3tYPPMw%3A1664726239474&ei=37Q5Y73HHLOI5OUPjfC1sAg&ved=0ahUKEwj9spvB9MH6AhUzBLkGHQ14DYYQ4dUDCA0&uact=5&oq=O+que+é+uma+API%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgoIABBHENYEELADOgcIABCwAxBDOgQIIxAnOgQIABBDOggIABCxAxCDAToGCAAQHhAHSgQIQRgASgQIRhgAUNoIWJoiYKsmaAJwAXgAgAFoiAGqB5IBAzguMpgBAKABAcgBCsABAQ&sclient=gws-wiz">
-                aqui
-              </a>
-              .
-            </Form.Text>
-          </div>
-          <div className="col-1 d-flex align-items-center">
-            <Button
-              variant="primary"
-              type="button"
-              className="float-end botao-get"
-              onClick={onClickGet} // Teria que chamar essa função aqui pra trocar o valor da variável "kanye", daí já refletia sozinho na tela, tlgd?
-            >
-              GET
-            </Button>
-          </div>
-        </div>
-
-        <div className="result-json mt-4 text-breaktext-break">
-          <div className="float-end copy-button" onClick={copiar}>
-            <MdContentCopy width={"10px"} />
-            <ToastContainer />
-          </div>
-          <JSONPretty
-            id="json-pretty"
-            data={kanye}
-            theme={JSONPrettyMon}
-          ></JSONPretty>
-        </div> */}
 
         <div>
           <Form.Label htmlFor="api-url-exemple">API url</Form.Label>
@@ -125,7 +85,7 @@ function ComoFunciona() {
             <b>2º Passo</b> - Clique no botão 'GET' para fazer uma requisição
             http do tipo get na API informada anteriormente.
           </p>
-
+          Requisição de sucesso: &nbsp;
           <Button
             variant="primary"
             type="button"
@@ -134,7 +94,55 @@ function ComoFunciona() {
           >
             GET
           </Button>
+          &nbsp;<BsChevronCompactRight />&nbsp;
+          <Button
+            variant="primary"
+            type="button"
+            disabled={true}
+            className="botao-get"
+            onClick={onClickGet}
+          >
+            <label><Spinner animation="grow" variant="light" size="sm"/> GET</label>
+          </Button>
+          &nbsp;<BsChevronCompactRight />&nbsp;
+          <Button
+            variant="success"
+            type="button"
+            className="botao-get"
+            onClick={onClickGet}
+          >
+            GET
+          </Button>
         </div>
+        <br />
+        Requisição com falha: &nbsp;&nbsp;&nbsp;
+        <Button
+          variant="primary"
+          type="button"
+          className="botao-get"
+          onClick={onClickGet}
+        >
+          GET
+        </Button>
+        &nbsp;<BsChevronCompactRight />&nbsp;
+        <Button
+          variant="primary"
+          type="button"
+          disabled={true}
+          className="botao-get"
+          onClick={onClickGet}
+        >
+          <label><Spinner animation="grow" variant="light" size="sm"/> GET</label>
+        </Button>
+        &nbsp;<BsChevronCompactRight />&nbsp;
+        <Button
+          variant="danger"
+          type="button"
+          className="botao-get"
+          onClick={onClickGet}
+        >
+          GET
+        </Button>
 
         <div className="mt-4">
           O resultado será exibido no campo em destaque:

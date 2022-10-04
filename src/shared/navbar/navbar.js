@@ -14,6 +14,7 @@ const Header = () => (
       <Nav className="me-auto text-link">
         <Nav.Link><Link to="/"> Home </Link></Nav.Link>
         <Nav.Link><Link to="como-funciona"> Como funciona? </Link></Nav.Link>
+        <Nav.Link><Link to="consultador"> Consultador de API </Link></Nav.Link>
         <Nav.Link><Link to="formatador"> Formatador de JSON </Link></Nav.Link>
       </Nav>
     </Container>

@@ -1,4 +1,4 @@
-import "./formatador.css";
+import "./formatador-page.css";
 import React, { useState } from "react";
 import { BsChevronCompactDown } from "react-icons/bs";
 import JSONPretty from "react-json-pretty";
@@ -15,8 +15,7 @@ function Formatador() {
   const copiar = () => {
     navigator.clipboard.writeText(jsonNaoFormatado);
     toast.success("Copiado!", {
-      autoClose: 1500,
-      progress: 0,
+      autoClose: 1500
     });
   };
 
@@ -26,7 +25,9 @@ function Formatador() {
       setJsonFormatado(jsonNaoFormatado);
     } catch (e) {
       setJsonFormatado("");
-      toast.error("Json não é válido");
+      toast.error("Json não é válido", {
+        autoClose: 2000
+      });
     }
   };
 

@@ -1,0 +1,26 @@
+/* CAIXA DE RESULTADO */
+.resultado-json-consultador {
+    color: white;
+    background-color: #272822;
+    max-height: 700px;
+    border-radius: 7px;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.resultado-json-consultador::-webkit-scrollbar {
+    width: 10px;
+    background-color: #272822;
+    border-radius: 5px;
+}
+
+.resultado-json-consultador::-webkit-scrollbar-thumb {
+    background-color: #181818;
+    border-radius: 5px;
+}
+
+.resultado-json-consultador::-webkit- {
+    background-color: #181818;
+    border-radius: 5px;
+}
