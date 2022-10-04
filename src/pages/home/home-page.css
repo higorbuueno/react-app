@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ----------
+    Title
+ ----------- */
+.title-card {
+    background-color: #282C34;
+    background-image: url(https://miro.medium.com/max/4800/1*1ER_MNwG-4pkcAevpPZvVw.png);
+    background-size: cover;
+    color: white;
+    height: 420px;
+}
+.title-card p{
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.title-card h1 {
+    color: #61DAFB;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+/* .comece-a-usar,
+.comece-a-usar a {
+    color: #20232A;
+    background-color: #61DAFB;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.comece-a-usar:hover,
+.comece-a-usar:hover a {
+    color: #20232A;
+    background-color: white;
+    transition: 0.5s;
+} */
+
+.comece-a-usar{
+    color: #61DAFB;
+    border: solid 1.5px #61DAFB;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.comece-a-usar a {
+    color: #61DAFB;
+    text-decoration: none;
+}
+
+.comece-a-usar:hover {
+    color: #20232A;
+    background-color: white;
+    border: solid 1.5px white;
+    transition: 0.5s;
+}
+.comece-a-usar:hover a{
+    color: #20232A;
+    transition: 0.5s;
+}
+
+.faca-o-tutorial,
+.faca-o-tutorial a {
+    color: #61DAFB;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.faca-o-tutorial:hover,
+.faca-o-tutorial:hover a {
+    color: white;
+    transition: 0.5s;
+}
+
+/* ------------------- */
+
+/* -----------------------
+    COLUNAS DE MENSAGEM
+-------------------------- */
+#colunas h3{
+    color: #8d8d8d;
+    font-weight: 200;
+}
+
+.link-fonte {
+    font-size: 12px;
+}

@@ -1,0 +1,44 @@
+/* CAIXA DE RESULTADO */
+.result-json {
+    color: white;
+    background-color: #272822;
+    max-height: 450px;
+    border-radius: 7px;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.result-json::-webkit-scrollbar {
+    width: 10px;
+    background-color: #272822;
+    border-radius: 5px;
+}
+
+.result-json::-webkit-scrollbar-thumb {
+    background-color: #181818;
+    border-radius: 5px;
+}
+
+.result-json::-webkit- {
+    background-color: #181818;
+    border-radius: 5px;
+}
+
+.copy-button {
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    color: gray;
+}
+
+.copy-button svg{
+    width: 20px;
+    height: 20px;
+}
+
+/* botão get */
+.row {
+    max-width: 150vh;
+}
