@@ -16,6 +16,7 @@ function RoutesApp() {
       <div className="body">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="react-app" element={<Home />} />
           <Route path="como-funciona" element={<ComoFunciona />} />
           <Route path="formatador" element={<Formatador />} />
           <Route path="consultador" element={<Consultador />} />
