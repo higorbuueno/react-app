@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import { Button } from "react-bootstrap";
 import JSONPretty from "react-json-pretty";
@@ -14,26 +14,6 @@ function Consultador() {
     const [url, setUrl] = useState('https://api.wfstats.cf/?ref=publicapis.dev');
     const [resultJson, setResultJson] = useState('{"null": null}');
     const [statusButton, setStatusButton] = useState('primary');
-
-    useEffect(() => {
-        setLoading(true);
-        fetch(url)
-            .then((response) => response.json())
-            .then((json) => {
-                setResultJson(JSON.stringify(json));
-                setStatusButton("success");
-            })
-            .catch(() => {
-                toast.error("Erro ao consultar de exemplo.");
-                setResultJson("");
-                setStatusButton("danger");
-            }).finally(() => {
-                setLoading(false);
-                setTimeout(() => {
-                    setStatusButton("primary");
-                }, 1000);
-            });
-    }, []);
 
     const [isLoading, setLoading] = useState(false);
 
