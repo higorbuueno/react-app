@@ -7,3 +7,15 @@
     color: #61dafb;
     transition: 0.5s;
 }
+
+.return-button {
+    color: white;
+    margin-left: 30px;
+}
+
+.return-button svg {
+    width: 25px;
+    height: 25px;
+    text-decoration: none;
+    color: white;
+}

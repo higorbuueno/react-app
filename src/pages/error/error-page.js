@@ -4,7 +4,7 @@ function Error() {
     return (
       <div>
         Erro - Página não encontrada.
-        <Link to="/"> Home </Link>
+        <Link to="react-app"> Home </Link>
       </div>
     );
 }
