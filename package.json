@@ -4,6 +4,7 @@
   "homepage": "react-app/",
   "private": true,
   "dependencies": {
+    "@svgr/webpack": "^6.5.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -15,9 +16,15 @@
     "react-icons": "^4.4.0",
     "react-json-pretty": "^2.2.0",
     "react-router-dom": "^6.4.1",
-    "react-scripts": "5.0.1",
     "react-toastify": "^9.0.8",
     "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "react-scripts": "5.0.1",
+    "@svgr/webpack": "^6.5.0"
+  },
+  "overrides": {
+    "@svgr/webpack": "$@svgr/webpack"
   },
   "scripts": {
     "start": "react-scripts start",
