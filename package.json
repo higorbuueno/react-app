@@ -9,7 +9,6 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.1",
-    "nth-check": "^2.1.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
@@ -20,11 +19,15 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "react-scripts": "5.0.1",
-    "@svgr/webpack": "^6.5.0"
+    "@svgr/webpack": "^6.5.0",
+    "nth-check": "^2.1.1",
+    "react-scripts": "5.0.1"
   },
   "overrides": {
     "@svgr/webpack": "$@svgr/webpack"
+  },
+  "resolutions": {
+    "nth-check": "^2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
