@@ -14,7 +14,8 @@
     color: white;
     height: 420px;
 }
-.title-card p{
+
+.title-card p {
     font-size: 30px;
     font-weight: 200;
 }
@@ -41,7 +42,11 @@
     transition: 0.5s;
 } */
 
-.comece-a-usar{
+.links-principais {
+    text-decoration: none;
+}
+
+.comece-a-usar {
     color: #61DAFB;
     border: solid 1.5px #61DAFB;
     cursor: pointer;
@@ -60,7 +65,8 @@
     border: solid 1.5px white;
     transition: 0.5s;
 }
-.comece-a-usar:hover a{
+
+.comece-a-usar:hover a {
     color: #20232A;
     transition: 0.5s;
 }
@@ -83,9 +89,15 @@
 /* -----------------------
     COLUNAS DE MENSAGEM
 -------------------------- */
-#colunas h3{
+
+#colunas h3 {
     color: #8d8d8d;
     font-weight: 200;
+}
+
+#colunas p {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .link-fonte {

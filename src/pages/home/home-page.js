@@ -11,22 +11,26 @@ function Home() {
           <p>Um braço direito dos desenvolvedores.</p>
         </div>
         <div className="mt-5 d-flex align-items-center justify-content-center">
-          <div className="me-3 comece-a-usar">
-            <Link to="consultador">Consultar API</Link>
-          </div>
-          <div className="me-3 comece-a-usar">
-            <Link to="formatador">Formatar JSON</Link>
-          </div>
-          <div className="faca-o-tutorial">
-            <Link to="como-funciona">
+          <Link to="consultador" className="links-principais">
+            <div className="me-3 comece-a-usar">
+              Consultar API
+            </div>
+          </Link>
+          <Link to="formatador" className="links-principais">
+            <div className="me-3 comece-a-usar">
+              Formatar JSON
+            </div>
+          </Link>
+          <Link to="como-funciona" className="links-principais">
+            <div className="faca-o-tutorial">
               Faça o tutorial <BsChevronCompactRight />
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       </div>
       <div className="mt-5 container" id="colunas">
         <div className="row">
-          <div className="col-4">
+          <div className="col-4 bloco-de-texto">
             <h3>O que são API's?</h3>
             <p>
               APIs são mecanismos que permitem que dois componentes de software
