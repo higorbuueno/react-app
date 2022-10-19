@@ -41,7 +41,7 @@ function Home() {
               atualizações meteorológicas diárias no telefone.
               <br />
               <p className="fst-italic me-3 link-fonte">
-                fonte:{" "}
+                Fonte:{" "}
                 <a
                   href="https://aws.amazon.com/pt/what-is/api/"
                   target="_blank"
@@ -49,6 +49,7 @@ function Home() {
                 >
                   aws.amazon.com
                 </a>
+                &nbsp; acessado em 19/10/2022 - 14:30
               </p>
             </p>
           </div>
@@ -65,7 +66,7 @@ function Home() {
               essas solicitações e respostas.
               <br />
               <p className="fst-italic me-3 link-fonte">
-                fonte:{" "}
+                Fonte:{" "}
                 <a
                   href="https://aws.amazon.com/pt/what-is/api/"
                   target="_blank"
@@ -73,6 +74,7 @@ function Home() {
                 >
                   aws.amazon.com
                 </a>
+                &nbsp; acessado em 19/10/2022 - 14:30
               </p>
             </p>
           </div>
@@ -86,7 +88,7 @@ function Home() {
               o servidor e o aplicativo móvel é o cliente.
               <br />
               <p className="fst-italic me-3 link-fonte">
-                fonte:{" "}
+                Fonte:{" "}
                 <a
                   href="https://aws.amazon.com/pt/what-is/api/"
                   target="_blank"
@@ -94,6 +96,7 @@ function Home() {
                 >
                   aws.amazon.com
                 </a>
+                &nbsp; acessado em 19/10/2022 - 14:30
               </p>
             </p>
           </div>
