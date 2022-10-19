@@ -16,10 +16,10 @@ const Header = () => (
         <img src={logo} alt="Logo" width="60px" />
       </Navbar.Brand>
       <Nav className="me-auto text-link">
-        <Nav.Link><Link to="react-app"> Home </Link></Nav.Link>
-        <Nav.Link><Link to="como-funciona"> Como funciona? </Link></Nav.Link>
-        <Nav.Link><Link to="consultador"> Consultador de API </Link></Nav.Link>
-        <Nav.Link><Link to="formatador"> Formatador de JSON </Link></Nav.Link>
+        <Nav.Link><Link to="react-app"> Home </Link></Nav.Link> {/** I've to put react-app before link because of gh-pages */}
+        <Nav.Link><Link to="react-app/como-funciona"> Como funciona? </Link></Nav.Link>{/** I've to put react-app before link because of gh-pages */}
+        <Nav.Link><Link to="react-app/consultador"> Consultador de API </Link></Nav.Link>{/** I've to put react-app before link because of gh-pages */}
+        <Nav.Link><Link to="react-app/formatador"> Formatador de JSON </Link></Nav.Link>{/** I've to put react-app before link because of gh-pages */}
       </Nav>
     </Container>
   </Navbar>

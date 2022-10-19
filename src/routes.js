@@ -16,9 +16,10 @@ function RoutesApp() {
       <div className="body">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="como-funciona" element={<ComoFunciona />} />
-          <Route path="formatador" element={<Formatador />} />
-          <Route path="consultador" element={<Consultador />} />
+          <Route path="react-app" element={<Home />} /> {/** I've to put react-app before link because of gh-pages */}
+          <Route path="react-app/como-funciona" element={<ComoFunciona />} /> {/** I've to put react-app before link because of gh-pages*/}
+          <Route path="react-app/formatador" element={<Formatador />} /> {/** I've to put react-app before link because of gh-pages*/}
+          <Route path="react-app/consultador" element={<Consultador />} /> {/** I've to put react-app before link because of gh-pages*/}
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
