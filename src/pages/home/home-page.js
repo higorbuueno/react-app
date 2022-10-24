@@ -29,8 +29,8 @@ function Home() {
         </div>
       </div>
       <div className="mt-5 container" id="colunas">
-        <div className="row">
-          <div className="col-4 bloco-de-texto">
+        <div className="grid">
+          <div className="coluna">
             <h3>O que são API's?</h3>
             <p>
               APIs são mecanismos que permitem que dois componentes de software
@@ -53,7 +53,7 @@ function Home() {
               </p>
             </p>
           </div>
-          <div className="col-4">
+          <div className="coluna">
             <h3> O que significa API? </h3>
             <p>
               API significa Application Programming Interface (Interface de
@@ -78,7 +78,7 @@ function Home() {
               </p>
             </p>
           </div>
-          <div className="col-4">
+          <div className="coluna">
             <h3> Como as APIs funcionam? </h3>
             <p>
               A arquitetura da API geralmente é explicada em termos de cliente e

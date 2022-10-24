@@ -32,7 +32,7 @@ function Formatador() {
   };
 
   return (
-    <div className="container mt-4">
+    <div className="container mt-4 mb-5">
       <ToastContainer />
       <div className="row">
         <div className="col-12">

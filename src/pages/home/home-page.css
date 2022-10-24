@@ -90,6 +90,15 @@
     COLUNAS DE MENSAGEM
 -------------------------- */
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+}
+
+.coluna {
+    margin: 0 10px 0 10px;
+}
+
 #colunas h3 {
     color: #8d8d8d;
     font-weight: 200;

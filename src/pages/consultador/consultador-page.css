@@ -24,3 +24,9 @@
     background-color: #181818;
     border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+    #api-url-exemple {
+        width: 90%;
+    }
+}

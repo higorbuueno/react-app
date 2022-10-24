@@ -7,13 +7,13 @@ import "./navbar.css"
 import { TiArrowBackOutline } from "react-icons/ti";
 
 const Header = () => (
-  <Navbar bg="dark" variant="dark">
+  <Navbar bg="dark" variant="dark" className="nav-bar">
     <div className="return-button">
-    <a href="https://higorbuueno.github.io"><TiArrowBackOutline /></a>
+      <a href="https://higorbuueno.github.io"><TiArrowBackOutline /></a>
     </div>
-    <Container>
-      <Navbar.Brand>
-        <img src={logo} alt="Logo" width="60px" />
+    <Container className="my-container">
+      <Navbar.Brand className="logo">
+        <img src={logo} alt="Logo" id="logo-react" width="60px" />
       </Navbar.Brand>
       <Nav className="me-auto text-link">
         <Nav.Link><Link to="react-app"> Home </Link></Nav.Link> {/** I've to put react-app before link because of gh-pages */}

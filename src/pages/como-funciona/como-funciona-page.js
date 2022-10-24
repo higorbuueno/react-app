@@ -85,65 +85,73 @@ function ComoFunciona() {
             <b>2º Passo</b> - Clique no botão 'GET' para fazer uma requisição
             http do tipo get na API informada anteriormente.
           </p>
-          Requisição de sucesso: &nbsp;
-          <Button
-            variant="primary"
-            type="button"
-            className="botao-get"
-            onClick={onClickGet}
-          >
-            GET
-          </Button>
-          &nbsp;<BsChevronCompactRight />&nbsp;
-          <Button
-            variant="primary"
-            type="button"
-            disabled={true}
-            className="botao-get"
-            onClick={onClickGet}
-          >
-            <label><Spinner animation="grow" variant="light" size="sm"/> GET</label>
-          </Button>
-          &nbsp;<BsChevronCompactRight />&nbsp;
-          <Button
-            variant="success"
-            type="button"
-            className="botao-get"
-            onClick={onClickGet}
-          >
-            GET
-          </Button>
+          <div className="loading-examples">
+            Requisição de sucesso: &nbsp;
+            <div className="exemple-buttons">
+              <Button
+                variant="primary"
+                type="button"
+                className="botao-get"
+                onClick={onClickGet}
+              >
+                GET
+              </Button>
+              &nbsp;<BsChevronCompactRight />&nbsp;
+              <Button
+                variant="primary"
+                type="button"
+                disabled={true}
+                className="botao-get"
+                onClick={onClickGet}
+              >
+                <label><Spinner animation="grow" variant="light" size="sm" /> GET</label>
+              </Button>
+              &nbsp;<BsChevronCompactRight />&nbsp;
+              <Button
+                variant="success"
+                type="button"
+                className="botao-get"
+                onClick={onClickGet}
+              >
+                GET
+              </Button>
+            </div>
+          </div>
         </div>
         <br />
-        Requisição com falha: &nbsp;&nbsp;&nbsp;
-        <Button
-          variant="primary"
-          type="button"
-          className="botao-get"
-          onClick={onClickGet}
-        >
-          GET
-        </Button>
-        &nbsp;<BsChevronCompactRight />&nbsp;
-        <Button
-          variant="primary"
-          type="button"
-          disabled={true}
-          className="botao-get"
-          onClick={onClickGet}
-        >
-          <label><Spinner animation="grow" variant="light" size="sm"/> GET</label>
-        </Button>
-        &nbsp;<BsChevronCompactRight />&nbsp;
-        <Button
-          variant="danger"
-          type="button"
-          className="botao-get"
-          onClick={onClickGet}
-        >
-          GET
-        </Button>
+        <div className="loading-examples">
+          Requisição com falha: &nbsp;&nbsp;&nbsp;
+          <div className="exemple-buttons">
+            <Button
+              variant="primary"
+              type="button"
+              className="botao-get"
+              onClick={onClickGet}
+            >
+              GET
+            </Button>
+            &nbsp;<BsChevronCompactRight />&nbsp;
+            <Button
+              variant="primary"
+              type="button"
+              disabled={true}
+              className="botao-get"
+              onClick={onClickGet}
+            >
+              <label><Spinner animation="grow" variant="light" size="sm" /> GET</label>
+            </Button>
+            &nbsp;<BsChevronCompactRight />&nbsp;
+            <Button
+              variant="danger"
+              type="button"
+              className="botao-get"
+              onClick={onClickGet}
+            >
+              GET
+            </Button>
 
+          </div>
+        </div>
         <div className="mt-4">
           O resultado será exibido no campo em destaque:
         </div>
